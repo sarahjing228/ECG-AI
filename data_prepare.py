@@ -1,17 +1,7 @@
 import torch
-import joblib
 import pandas as pd
 import numpy as np
 from torch.utils.data import Dataset,DataLoader
-
-# Load CSV data
-PT_train_df = pd.read_csv('../Train_Data.csv')
-PT_valid_df = pd.read_csv('../Validation_Data.csv')
-
-# Save as jb format
-joblib.dump(PT_train_df, '../PTTrain_Data.jb')
-joblib.dump(PT_valid_df, '../PTValidation_Data.jb')
-
 
 # fmask1
 def f_get_fc_mask1(time_data, label, num_Event, num_Category): 
