@@ -103,7 +103,6 @@ class ASDataset(Dataset):
         self.df_mask2 = torch.tensor(df_mask2_np, dtype=torch.float32)
         #print("Shape of df_mask2 tensor:", self.df_mask2.shape)
 
-    # ... rest of your class
     def fillna(self, value):
         self.data.fillna(value, inplace=True)
 
